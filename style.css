@@ -1,0 +1,81 @@
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* NAVBAR (Flex + styling) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+    color: yellow;
+    transform: scale(1.2);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* FLEX gallery */
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* IMAGE BOX MODEL */
+img {
+    border: 3px solid #333;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Hover effect on images */
+img:hover {
+    transform: scale(1.1);
+    border-color: red;
+}
+
+/* nth-child selector */
+.flex-gallery img:nth-child(even) {
+    border-radius: 50%;
+}
+
+/* boxes */
+.box {
+    text-align: center;
+}
